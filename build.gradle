@@ -4,15 +4,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testCompile 'junit:junit:4.10'
-}
-
-checkstyle {
-    ignoreFailures = true
-    toolVersion = '6.6'
-}
-
 tasks.withType(Checkstyle) {
     reports {
         xml.enabled = false
