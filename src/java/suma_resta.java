@@ -33,7 +33,7 @@ public class prog{
 		for(int i = 0; i < cuenta.length(); i++){
 					
 					String caracter = String.valueOf(cuenta.charAt(i));
-					if(!caracter.equals("+") && !caracter.equals("=") && !caracter.equals("-"))
+					if(!caracter.equals("+") && !caracter.equals("-"))
 						buffer = buffer.concat(String.valueOf(cuenta.charAt(i)));
 					else{
 						
