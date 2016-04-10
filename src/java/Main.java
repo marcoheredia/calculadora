@@ -11,7 +11,7 @@ public class Main {
 	        
 	        int salida = 0;
 	        while(salida != 1){
-				System.out.println("Ingrese la suma:");
+				System.out.println("Ingrese el calculo a realizar:");
 
 				Scanner scan = new Scanner(System.in);
 				String linea = scan.nextLine();
@@ -25,7 +25,7 @@ public class Main {
 				
 				
 				System.out.println(resultado);
-				System.out.println("ingrese '1' para salir o '0' para hacer otra operacion");
+				System.out.println("Ingrese '1' para salir o '0' para hacer otra operacion");
 				salida = scan.nextInt();
 				
 			}
