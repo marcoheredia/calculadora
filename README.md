@@ -1,3 +1,1 @@
-# calculadora
-
-Grupo MATE
+## Grupo MATE
