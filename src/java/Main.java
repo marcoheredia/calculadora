@@ -4,7 +4,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-
 public class Main {
 
 	 public static void main(String [] Args){
@@ -26,8 +25,6 @@ public class Main {
 				System.out.println(resultado);
 				System.out.println("Ingrese '1' para salir o '0' para hacer otra operacion");
 				salida = scan.nextInt();
-				
-				
 			}
 		}
 		
@@ -51,14 +48,13 @@ public class Main {
 							
 							if(caracter.equals("/"))
 								operadores.add("/");
-																
+									
 							numeros.add(buffer);
 							buffer = "";
 						}
 				}
 			numeros.add(buffer);
 		}
-		
 		public static int calcular(ArrayList<String> operadores, ArrayList<String> numeros){
 		
 			int resultado = 0;
@@ -80,8 +76,7 @@ public class Main {
 							if(j == 1){/////quiere decir que es el primer operador
 								resultado = resultado / Integer.valueOf(numeros.get(j)).intValue();
 								break;
-							}
-									
+							}			
 					}
 			}
 			return resultado;	
