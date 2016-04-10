@@ -41,7 +41,7 @@ public class Main {
 			for(int i = 0; i < cuenta.length(); i++){
 						
 						String caracter = String.valueOf(cuenta.charAt(i));
-						if(!caracter.equals("+") && !caracter.equals("-") && !caracter.equals("*"))
+						if(!caracter.equals("+") && !caracter.equals("-") && !caracter.equals("*") && !caracter.equals("%"))
 							buffer = buffer.concat(String.valueOf(cuenta.charAt(i)));
 						else{
 							
@@ -53,6 +53,9 @@ public class Main {
 							
 							if(caracter.equals("*"))
 								operadores.add("*");
+							
+							if(caracter.equals("%"))
+								operadores.add("%");
 							
 							numeros.add(buffer);
 							buffer = "";
@@ -76,6 +79,11 @@ public class Main {
 						if(dato.equals("*"))
 							if(j == 1){/////quiere decir que es el primer operador
 								resultado = resultado * Integer.valueOf(numeros.get(j)).intValue();
+								break;
+							}
+						if(dato.equals("%"))
+							if(j == 1){/////quiere decir que es el primer operador
+								resultado = resultado * Integer.valueOf(numeros.get(j)).intValue()/ 100 ;
 								break;
 							}
 					}
